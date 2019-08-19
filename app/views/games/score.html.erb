@@ -1,0 +1,10 @@
+<h1>Result</h1>
+
+<p> <%= @message %></p>
+
+<form action="play" method="POST">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :score, @score %>
+    <input type="submit" value="Play again">
+</form>
+
